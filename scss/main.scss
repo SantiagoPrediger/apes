@@ -1,0 +1,19 @@
+@import './header';
+@import './footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background: rgb(20,54,91);
+    background: linear-gradient(0deg, rgba(20,54,91,1) 0%, rgba(0,15,25,1) 100%);
+    
+    .logo {
+        width: 10%;
+        border-radius: 10px;
+        margin: 25px;
+    }
+}

@@ -1,0 +1,17 @@
+header {
+  height: auto; }
+  header .banner img {
+    width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main {
+  background: #14365b;
+  background: linear-gradient(0deg, #14365b 0%, #000f19 100%); }
+  main .logo {
+    width: 10%;
+    border-radius: 10px;
+    margin: 25px; }
