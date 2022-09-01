@@ -11,6 +11,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;800&display=swap);
 
 main {
+    width: 100%;
     background: rgb(20,54,91);
     background: linear-gradient(0deg, rgba(20,54,91,1) 0%, rgba(0,15,25,1) 100%);
     .container {
@@ -66,6 +67,7 @@ main {
     .apes {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         .ape {
             img {
                 border-radius: 30px;
