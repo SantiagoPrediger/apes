@@ -16,6 +16,7 @@
   width: 100%;
   background-color: #000f19; }
   .footer ul {
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly; }
@@ -24,6 +25,8 @@
       .footer ul li a img {
         margin: 10px;
         width: 60%; }
+        .footer ul li a img:hover {
+          scale: 1.1; }
   .footer .copy {
     text-align: center;
     color: white;
@@ -93,9 +96,21 @@ main {
       main .apes .ape .price {
         font-size: 1.3rem;
         margin-top: 15px; }
-      main .apes .ape a {
+      main .apes .ape .boton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: lightblue;
-        text-decoration: none;
-        font-family: 'quicksand';
-        font-weight: 600;
-        padding: 8px; }
+        margin: 15px;
+        border-radius: 6px; }
+        main .apes .ape .boton a {
+          text-decoration: none;
+          font-family: 'quicksand';
+          font-weight: 800;
+          font-size: 1.5rem;
+          color: black; }
+          main .apes .ape .boton a:hover {
+            color: #000f19;
+            scale: 1.05; }
+        main .apes .ape .boton:hover {
+          scale: 1.05; }
