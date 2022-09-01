@@ -1,19 +1,95 @@
-@import './header';
-@import './footer';
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+@import './secciones/header';
+@import './secciones/footer';
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;800&display=swap);
+
 main {
     background: rgb(20,54,91);
     background: linear-gradient(0deg, rgba(20,54,91,1) 0%, rgba(0,15,25,1) 100%);
+    .container {
+        display: flex;
+        justify-content: center;
+        .logo {
+            width: 30%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+    }
     
-    .logo {
-        width: 10%;
-        border-radius: 10px;
-        margin: 25px;
+    .titles {
+        h1 {
+            margin: 25px;
+            font-family: 'rubik';
+            font-weight: 500;
+            color: white;
+        }
+        span {
+            margin: 25px 3px 25px 25px;
+            font-family: 'Quicksand';
+            color: lightblue;
+            font-size: 1.2rem;
+        }
+        .verif {
+            width: 20px;
+        }
+        p {
+            color: white;
+            margin: 25px;
+            font-family: 'rubik';
+            font-weight: 100;
+            text-align: center;
+        }
+    }
+    .datos {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        font-family: 'rubik';
+        font-weight: 100;
+        justify-content: space-around;
+        .stats {
+            background-color: lightblue;
+            border-radius: 4px;
+            text-align: center;
+            color: black;
+            width: 17%;
+            height: 60px;
+        }
+    }
+    .apes {
+        display: flex;
+        flex-wrap: wrap;
+        .ape {
+            img {
+                border-radius: 30px;
+                padding: 10px;
+            }
+            margin: 25px;
+            background-color: black;
+            border-radius: 10px;
+            p {
+                color: white;
+                font-family: 'rubik';
+                margin-left: 15px;
+            }
+            .price {
+                font-size: 1.3rem;
+                margin-top: 15px;
+            }
+            a {
+                background-color: lightblue;
+                text-decoration: none;
+                font-family: 'quicksand';
+                font-weight: 600;
+                padding: 8px;
+            }
+        }
     }
 }
