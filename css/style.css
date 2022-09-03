@@ -36,7 +36,7 @@
     padding-bottom: 10px; }
 
 main {
-  width: 100%;
+  max-width: 100%;
   background: #14365b;
   background: linear-gradient(0deg, #14365b 0%, #000f19 100%); }
   main .container {
@@ -70,7 +70,9 @@ main {
     color: white;
     font-family: 'rubik';
     font-weight: 100;
-    justify-content: space-around; }
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto; }
     main .datos .stats {
       background-color: lightblue;
       border-radius: 4px;
@@ -81,14 +83,15 @@ main {
   main .apes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: space-evenly; }
     main .apes .ape {
       margin: 25px;
       background-color: black;
       border-radius: 10px; }
       main .apes .ape img {
         border-radius: 30px;
-        padding: 10px; }
+        padding: 10px;
+        width: 350px; }
       main .apes .ape p {
         color: white;
         font-family: 'rubik';
@@ -114,3 +117,13 @@ main {
             scale: 1.05; }
         main .apes .ape .boton:hover {
           scale: 1.05; }
+
+@media (min-width: 860px) {
+  main .container {
+    justify-content: start;
+    margin-left: 25px; }
+    main .container .logo {
+      margin-top: 20px;
+      width: 10%; }
+  main .titles p {
+    text-align: start; } }
